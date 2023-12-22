@@ -23,12 +23,30 @@ namespace BlogApp.API.Controllers
             return Ok(categories);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Update([FromForm]UpdateBrandDTO updateBrandDTO)
-        {
-            _service\
 
+        [HttpPost]
+        public async Task<IActionResult> Create([FromForm]CreateBrandDTO createBrandDTO)
+        {
+            await _service.Create(createBrandDTO);
+            return StatusCode(StatusCodes.Status201Created);
         }
-        
+
+
+
+
+
+        [HttpPut]
+        public async Task<IActionResult> Update([FromForm] UpdateBrandDTO updateBrandDTO)
+        {
+            await _service.Update(updateBrandDTO);
+            return StatusCode(StatusCodes.Status200OK);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _service.Delete(id);
+            return StatusCode(StatusCodes.Status200OK);
+        }
     }
 }

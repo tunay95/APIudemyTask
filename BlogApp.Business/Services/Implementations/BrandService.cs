@@ -20,7 +20,7 @@ namespace BlogApp.Business.Services.Implementations
         }
 
 
-        public async Task<ICollection<Brand>> GetALlAsync()
+        public async Task<ICollection<Brand>> GetAllAsync()
         {
             var brands = await _repository.GetAllAsync();
             return await brands.ToListAsync();
@@ -38,9 +38,10 @@ namespace BlogApp.Business.Services.Implementations
             brand.Name = updateBrandDTO.Name;
 
             await _repository.Update(brand);
+            await _repository.SavingChanges();
         }
 
-        public async Task <Brand> GetById(int id)
+        public async Task <Brand> GetByIdAsync(int id)
         {
             if (id <= 0)
             {
@@ -53,6 +54,33 @@ namespace BlogApp.Business.Services.Implementations
 
             }
             return brand;
+        }
+
+        
+
+        public async Task Create(CreateBrandDTO createBrandDTO)
+        {
+            Brand brand = new Brand();
+            brand.Name = createBrandDTO.Name;
+            brand.LogoUrl = createBrandDTO.LogUrl;
+            await _repository.Add(brand);
+            await _repository.SavingChanges();
+        }
+
+        public async Task Delete(int id)
+        {
+            if (id<=0)
+            {
+            throw new Exception("Id must be more than 0");
+            }
+            var brand = await _repository.GetById(id);
+
+            if(brand == null)
+            {
+                throw new Exception("Brand not found");
+            }
+            _repository.Delete(brand);
+            await _repository.SavingChanges();
         }
     }
     
