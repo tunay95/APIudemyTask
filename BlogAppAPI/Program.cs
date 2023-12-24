@@ -11,11 +11,11 @@ using System;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddScoped<IBrandRepository,BrandRepository>();
-builder.Services.AddScoped<IBrandService, BrandService>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddControllers().AddFluentValidation(opt =>
 {
-    opt.RegisterValidatorsFromAssembly(typeof(CreateBrandDTOValidation).Assembly);
+    opt.RegisterValidatorsFromAssembly(typeof(CreateCategoryDTOValidation).Assembly);
 });
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

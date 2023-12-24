@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace BlogApp.DAL.Repositories.Implementation
 {
-    public class BrandRepository : Repository<Brand>, IBrandRepository
-    {
-        public BrandRepository(AppDbContext context) : base(context)
+    public class CategoryRepository : Repository<Category>, ICategoryRepository
+	{
+        public CategoryRepository(AppDbContext context) : base(context)
         {
         }
     }

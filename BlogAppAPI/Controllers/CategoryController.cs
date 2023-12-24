@@ -7,10 +7,10 @@ namespace BlogApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BrandsController : ControllerBase
+    public class CategoryController : ControllerBase
     {
-        private readonly IBrandService _service;
-        public BrandsController(IBrandService service)
+        private readonly ICategoryService _service;
+        public CategoryController(ICategoryService service)
         {
             _service = service;
         }
@@ -25,9 +25,9 @@ namespace BlogApp.API.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromForm]CreateBrandDTO createBrandDTO)
+        public async Task<IActionResult> Create([FromForm]CreateCategoryDTO createCategoryDTO)
         {
-            await _service.Create(createBrandDTO);
+            await _service.Create(createCategoryDTO);
             return StatusCode(StatusCodes.Status201Created);
         }
 
@@ -36,9 +36,9 @@ namespace BlogApp.API.Controllers
 
 
         [HttpPut]
-        public async Task<IActionResult> Update([FromForm] UpdateBrandDTO updateBrandDTO)
+        public async Task<IActionResult> Update([FromForm] UpdateCategoryDTO updateCategoryDTO)
         {
-            await _service.Update(updateBrandDTO);
+            await _service.Update(updateCategoryDTO);
             return StatusCode(StatusCodes.Status200OK);
         }
 

@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace BlogApp.Business.DTOs.BrandDTOs
 {
-    public class UpdateBrandDTO
-    {
+    public class UpdateCategoryDTO
+	{
         public int Id { get; set; }
         public string Name { get; set; }
     }
-    public class UpdateBrandDTOValidation : AbstractValidator<UpdateBrandDTO>
+    public class UpdateCategoryDTOValidation : AbstractValidator<UpdateCategoryDTO>
     {
-        public UpdateBrandDTOValidation()
+        public UpdateCategoryDTOValidation()
         {
             RuleFor(x => x.Name)
                 .NotEmpty()

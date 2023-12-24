@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BlogApp.Core.Entities
 {
-    public class Brand:BaseEntity
+    public class Category:BaseEntity
     {
         public string Name { get; set; }
         public string LogoUrl { get; set; }

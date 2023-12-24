@@ -20,7 +20,7 @@ namespace BlogApp.DAL.Context
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);
         }
-        public DbSet<Brand> Brands { get; set; }
-        public DbSet<Car> Cars { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        
     }
 }

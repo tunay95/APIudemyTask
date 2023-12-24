@@ -11,59 +11,59 @@ using System.Threading.Tasks;
 
 namespace BlogApp.Business.Services.Implementations
 {
-    public class BrandService : IBrandService
+    public class CategoryService : ICategoryService
     {
-        private readonly IBrandRepository _repository;
-        public BrandService(IBrandRepository repository)
+        private readonly ICategoryRepository _repository;
+        public CategoryService(ICategoryRepository repository)
         {
             _repository = repository;
         }
 
 
-        public async Task<ICollection<Brand>> GetAllAsync()
+        public async Task<ICollection<Category>> GetAllAsync()
         {
-            var brands = await _repository.GetAllAsync();
-            return await brands.ToListAsync();
+            var categories = await _repository.GetAllAsync();
+            return await categories.ToListAsync();
         }
 
-        public async Task Update(UpdateBrandDTO updateBrandDTO) 
+        public async Task Update(UpdateCategoryDTO updateCategoryDTO) 
         {
-            if(updateBrandDTO == null)
+            if(updateCategoryDTO == null)
             {
                 throw new Exception("Form is Wrong");
             }
 
-            Brand brand = await _repository.GetById(updateBrandDTO.Id);
+			Category category = await _repository.GetById(updateCategoryDTO.Id);
 
-            brand.Name = updateBrandDTO.Name;
+			category.Name = updateCategoryDTO.Name;
 
-            await _repository.Update(brand);
+            await _repository.Update(category);
             await _repository.SavingChanges();
         }
 
-        public async Task <Brand> GetByIdAsync(int id)
+        public async Task <Category> GetByIdAsync(int id)
         {
             if (id <= 0)
             {
                 throw new Exception("Must be More than 0 ");
             }
-            var brand = await _repository.GetById(id);
-            if(brand == null)
+            var category = await _repository.GetById(id);
+            if(category == null)
             {
                 throw new Exception("Brand not Found");
 
             }
-            return brand;
+            return category;
         }
 
         
 
-        public async Task Create(CreateBrandDTO createBrandDTO)
+        public async Task Create(CreateCategoryDTO createCategoryDTO)
         {
-            Brand brand = new Brand();
-            brand.Name = createBrandDTO.Name;
-            brand.LogoUrl = createBrandDTO.LogUrl;
-            await _repository.Add(brand);
+			Category category = new Category();
+			category.Name = createCategoryDTO.Name;
+			category.LogoUrl = createCategoryDTO.LogUrl;
+            await _repository.Add(category);
             await _repository.SavingChanges();
         }
 
@@ -73,13 +73,13 @@ namespace BlogApp.Business.Services.Implementations
             {
             throw new Exception("Id must be more than 0");
             }
-            var brand = await _repository.GetById(id);
+            var category = await _repository.GetById(id);
 
-            if(brand == null)
+            if(category == null)
             {
                 throw new Exception("Brand not found");
             }
-            _repository.Delete(brand);
+            _repository.Delete(category);
             await _repository.SavingChanges();
         }
     }

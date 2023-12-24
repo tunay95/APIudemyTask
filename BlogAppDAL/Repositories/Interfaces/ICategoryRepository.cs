@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BlogApp.DAL.Repositories.Interfaces
 {
-    public interface IBrandRepository:IRepository<Brand>
+    public interface ICategoryRepository : IRepository<Category>
     {
     }
 }

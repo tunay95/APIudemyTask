@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace BlogApp.Business.DTOs.BrandDTOs
 {
-    public class CreateBrandDTO
+    public class CreateCategoryDTO
     {
         public string Name { get; set; }
         public string LogUrl { get; set; }
     }
-    public class CreateBrandDTOValidation : AbstractValidator<CreateBrandDTO>
+    public class CreateCategoryDTOValidation : AbstractValidator<CreateCategoryDTO>
     {
-        public CreateBrandDTOValidation() 
+        public CreateCategoryDTOValidation() 
         {
             RuleFor(x => x.Name)
                 .NotEmpty()
