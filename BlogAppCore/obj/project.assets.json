@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TUNAY\\Source\\Repos\\APIblog\\BlogAppCore\\BlogApp.Core.csproj",
+      "projectUniqueName": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppCore\\BlogApp.Core.csproj",
       "projectName": "BlogApp.Core",
-      "projectPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIblog\\BlogAppCore\\BlogApp.Core.csproj",
+      "projectPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppCore\\BlogApp.Core.csproj",
       "packagesPath": "C:\\Users\\TUNAY\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIblog\\BlogAppCore\\obj\\",
+      "outputPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\TUNAY\\AppData\\Roaming\\NuGet\\NuGet.Config",

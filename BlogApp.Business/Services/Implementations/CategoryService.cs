@@ -35,7 +35,7 @@ namespace BlogApp.Business.Services.Implementations
 
 			Category category = await _repository.GetById(updateCategoryDTO.Id);
 
-			category.Name = updateCategoryDTO.Name;
+			category.Title = updateCategoryDTO.Title;
 
             await _repository.Update(category);
             await _repository.SavingChanges();
@@ -61,8 +61,7 @@ namespace BlogApp.Business.Services.Implementations
         public async Task Create(CreateCategoryDTO createCategoryDTO)
         {
 			Category category = new Category();
-			category.Name = createCategoryDTO.Name;
-			category.LogoUrl = createCategoryDTO.LogUrl;
+            category.Title = createCategoryDTO.Title;
             await _repository.Add(category);
             await _repository.SavingChanges();
         }

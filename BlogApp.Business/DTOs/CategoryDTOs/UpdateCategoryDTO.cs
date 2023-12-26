@@ -10,21 +10,24 @@ namespace BlogApp.Business.DTOs.BrandDTOs
     public class UpdateCategoryDTO
 	{
         public int Id { get; set; }
-        public string Name { get; set; }
-    }
+        public string Title { get; set; }
+		public int? ParentId { get; set; }
+	}
     public class UpdateCategoryDTOValidation : AbstractValidator<UpdateCategoryDTO>
     {
         public UpdateCategoryDTOValidation()
         {
-            RuleFor(x => x.Name)
+            RuleFor(x => x.Title)
                 .NotEmpty()
-                .WithMessage("Field bos ola bilmez")
+                .WithMessage("Field cannot be empty !")
                 .NotNull()
-                .WithMessage("Bos olmasin");
+                .WithMessage("Don't Forget To Fill Title Section !");
             RuleFor(x => x.Id)
                 .NotEmpty()
                 .NotNull()
-                .WithMessage("Id dogru deil");
+                .WithMessage("Incorrect Id !");
+           
+
         }
     }
 }

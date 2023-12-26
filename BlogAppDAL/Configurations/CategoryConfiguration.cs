@@ -13,7 +13,8 @@ namespace BlogApp.DAL.Configurations
     {
         public void Configure(EntityTypeBuilder<Category> builder)
         {
-            builder.Property(x => x.Name).IsRequired().HasMaxLength(32);
+            builder.Property(x => x.Title).IsRequired().HasMaxLength(32);
+            builder.Property(x =>x.ParentId).IsRequired();
         }
     }
 }

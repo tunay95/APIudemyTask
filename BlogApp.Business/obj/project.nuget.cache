@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0VxnDhaUdp699+YdSmkecjZlqxd9+pI7g0bCv0ck+S2zHyhhxzaOdnNqW086XndzGconpIwadwWpLUhNuE2xTQ==",
+  "dgSpecHash": "8wJO7SD3nxRQZikVwBKt8Q+S+WdmPbCKd+JlKPH5X8Tcwyyqzce6csW3o8Abbs+JGOtwv4biGn0/gElH3c55vA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\TUNAY\\source\\repos\\APIblog\\BlogApp.Business\\BlogApp.Business.csproj",
+  "projectFilePath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogApp.Business\\BlogApp.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TUNAY\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\TUNAY\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",

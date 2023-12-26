@@ -2609,11 +2609,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TUNAY\\source\\repos\\APIblog\\BlogAppAPI\\BlogApp.API.csproj",
+      "projectUniqueName": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppAPI\\BlogApp.API.csproj",
       "projectName": "BlogApp.API",
-      "projectPath": "C:\\Users\\TUNAY\\source\\repos\\APIblog\\BlogAppAPI\\BlogApp.API.csproj",
+      "projectPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppAPI\\BlogApp.API.csproj",
       "packagesPath": "C:\\Users\\TUNAY\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TUNAY\\source\\repos\\APIblog\\BlogAppAPI\\obj\\",
+      "outputPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\TUNAY\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2630,8 +2630,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\TUNAY\\source\\repos\\APIblog\\BlogApp.Business\\BlogApp.Business.csproj": {
-              "projectPath": "C:\\Users\\TUNAY\\source\\repos\\APIblog\\BlogApp.Business\\BlogApp.Business.csproj"
+            "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogApp.Business\\BlogApp.Business.csproj": {
+              "projectPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogApp.Business\\BlogApp.Business.csproj"
             }
           }
         }

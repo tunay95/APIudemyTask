@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace BlogApp.DAL.Repositories.Implementation
 {
-    public class Repository<T>:IRepository<T> where T : BaseEntity,new() 
+    public class Repository<T>:IRepository<T> where T : BaseAuditableEntity,new() 
     {
         private readonly AppDbContext _context;
         public Repository(AppDbContext context)

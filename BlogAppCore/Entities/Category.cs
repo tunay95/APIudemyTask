@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 
 namespace BlogApp.Core.Entities
 {
-    public class Category:BaseEntity
+    public class Category:BaseAuditableEntity
     {
-        public string Name { get; set; }
-        public string LogoUrl { get; set; }
+        public string Title { get; set; }
+        public int? ParentId { get; set; }
+        public virtual Category? Parent { get; set; }
+        public virtual ICollection<Category> Children { get; set; }
     }
 }

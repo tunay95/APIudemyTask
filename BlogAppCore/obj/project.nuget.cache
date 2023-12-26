@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NBhAaPgbanOIaRSgk/aiYx8+4noW0R/mqg7mZG6ITHFQHXwFvWq3puwdbKPGbxhqQFu//3Zp7Hw0j+RBHflI/g==",
+  "dgSpecHash": "8fN7BgqdyvDfVbJn7oxNi1lfkNeCyuVUhEci42abTfo79wh2ErcOWsXWZOj7/Tq2TQq1W/uwCIRJ7p2hD7YKKQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\TUNAY\\source\\repos\\APIblog\\BlogAppCore\\BlogApp.Core.csproj",
+  "projectFilePath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppCore\\BlogApp.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

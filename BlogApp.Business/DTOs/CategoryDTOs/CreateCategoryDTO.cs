@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using BlogApp.Core.Entities;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,18 +10,22 @@ namespace BlogApp.Business.DTOs.BrandDTOs
 {
     public class CreateCategoryDTO
     {
-        public string Name { get; set; }
-        public string LogUrl { get; set; }
-    }
+        public string Title { get; set; }
+		public int ParentId { get; set; }
+		
+	}
     public class CreateCategoryDTOValidation : AbstractValidator<CreateCategoryDTO>
     {
         public CreateCategoryDTOValidation() 
         {
-            RuleFor(x => x.Name)
+            RuleFor(x => x.Title)
                 .NotEmpty()
-                .WithMessage("Name Bos olmasin")
+                .WithMessage("Title Field cannot be empty !")
                 .NotNull()
-                .WithMessage("Field bos ola bilmez");
-        }
+                .WithMessage("Field cannot be null !");
+			RuleFor(x => x.ParentId)
+			   .NotEmpty()
+			   .WithMessage("There's no Such Category w/This Id !");
+		}
     }
 }

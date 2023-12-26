@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TUNAY\\source\\repos\\APIblog\\BlogAppCore\\BlogApp.Core.csproj": {}
+    "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppCore\\BlogApp.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TUNAY\\source\\repos\\APIblog\\BlogAppCore\\BlogApp.Core.csproj": {
+    "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppCore\\BlogApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TUNAY\\source\\repos\\APIblog\\BlogAppCore\\BlogApp.Core.csproj",
+        "projectUniqueName": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppCore\\BlogApp.Core.csproj",
         "projectName": "BlogApp.Core",
-        "projectPath": "C:\\Users\\TUNAY\\source\\repos\\APIblog\\BlogAppCore\\BlogApp.Core.csproj",
+        "projectPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppCore\\BlogApp.Core.csproj",
         "packagesPath": "C:\\Users\\TUNAY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TUNAY\\source\\repos\\APIblog\\BlogAppCore\\obj\\",
+        "outputPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TUNAY\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -11,16 +11,22 @@ namespace BlogApp.DAL.Context
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
-        {
-        }
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            modelBuilder.Entity<Category>()
+                .HasOne(s => s.Parent)
+                .WithMany(m => m.Children)
+                .HasForeignKey(e => e.ParentId);
             base.OnModelCreating(modelBuilder);
         }
-        public DbSet<Category> Categories { get; set; }
-        
-    }
+        public virtual DbSet<Category> Categories { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<StudentsCourses> StudentsCourses { get; set; }
+        public DbSet<Course> Courses { get; set; }
+	
+
+	}
 }
