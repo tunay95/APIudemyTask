@@ -11,7 +11,7 @@ namespace BlogApp.Business.DTOs.BrandDTOs
     public class CreateCategoryDTO
     {
         public string Title { get; set; }
-		public int ParentId { get; set; }
+		public int? ParentId { get; set; }
 		
 	}
     public class CreateCategoryDTOValidation : AbstractValidator<CreateCategoryDTO>

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppAPI\\BlogApp.API.csproj": {}
+    "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogAppAPI\\BlogApp.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogApp.Business\\BlogApp.Business.csproj": {
+    "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogApp.Business\\BlogApp.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogApp.Business\\BlogApp.Business.csproj",
+        "projectUniqueName": "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogApp.Business\\BlogApp.Business.csproj",
         "projectName": "BlogApp.Business",
-        "projectPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogApp.Business\\BlogApp.Business.csproj",
-        "packagesPath": "C:\\Users\\TUNAY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogApp.Business\\obj\\",
+        "projectPath": "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogApp.Business\\BlogApp.Business.csproj",
+        "packagesPath": "C:\\Users\\II novbe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogApp.Business\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\TUNAY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\II novbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppDAL\\BlogApp.DAL.csproj": {
-                "projectPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppDAL\\BlogApp.DAL.csproj"
+              "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogAppDAL\\BlogApp.DAL.csproj": {
+                "projectPath": "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogAppDAL\\BlogApp.DAL.csproj"
               }
             }
           }
@@ -69,21 +73,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppAPI\\BlogApp.API.csproj": {
+    "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogAppAPI\\BlogApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppAPI\\BlogApp.API.csproj",
+        "projectUniqueName": "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogAppAPI\\BlogApp.API.csproj",
         "projectName": "BlogApp.API",
-        "projectPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppAPI\\BlogApp.API.csproj",
-        "packagesPath": "C:\\Users\\TUNAY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppAPI\\obj\\",
+        "projectPath": "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogAppAPI\\BlogApp.API.csproj",
+        "packagesPath": "C:\\Users\\II novbe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogAppAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\TUNAY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\II novbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,8 +105,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogApp.Business\\BlogApp.Business.csproj": {
-                "projectPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogApp.Business\\BlogApp.Business.csproj"
+              "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogApp.Business\\BlogApp.Business.csproj": {
+                "projectPath": "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogApp.Business\\BlogApp.Business.csproj"
               }
             }
           }
@@ -143,21 +151,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppCore\\BlogApp.Core.csproj": {
+    "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogAppCore\\BlogApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppCore\\BlogApp.Core.csproj",
+        "projectUniqueName": "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogAppCore\\BlogApp.Core.csproj",
         "projectName": "BlogApp.Core",
-        "projectPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppCore\\BlogApp.Core.csproj",
-        "packagesPath": "C:\\Users\\TUNAY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppCore\\obj\\",
+        "projectPath": "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogAppCore\\BlogApp.Core.csproj",
+        "packagesPath": "C:\\Users\\II novbe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogAppCore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\TUNAY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\II novbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -182,6 +194,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -198,21 +216,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppDAL\\BlogApp.DAL.csproj": {
+    "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogAppDAL\\BlogApp.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppDAL\\BlogApp.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogAppDAL\\BlogApp.DAL.csproj",
         "projectName": "BlogApp.DAL",
-        "projectPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppDAL\\BlogApp.DAL.csproj",
-        "packagesPath": "C:\\Users\\TUNAY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppDAL\\obj\\",
+        "projectPath": "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogAppDAL\\BlogApp.DAL.csproj",
+        "packagesPath": "C:\\Users\\II novbe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogAppDAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\TUNAY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\II novbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -226,8 +248,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppCore\\BlogApp.Core.csproj": {
-                "projectPath": "C:\\Users\\TUNAY\\Source\\Repos\\APIudemyTask\\BlogAppCore\\BlogApp.Core.csproj"
+              "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogAppCore\\BlogApp.Core.csproj": {
+                "projectPath": "C:\\Users\\II novbe\\Source\\Repos\\APIudemyTask\\BlogAppCore\\BlogApp.Core.csproj"
               }
             }
           }
@@ -273,7 +295,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

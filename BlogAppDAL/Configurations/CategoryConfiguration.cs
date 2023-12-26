@@ -16,5 +16,6 @@ namespace BlogApp.DAL.Configurations
             builder.Property(x => x.Title).IsRequired().HasMaxLength(32);
             builder.Property(x =>x.ParentId).IsRequired();
         }
+       
     }
 }
