@@ -1,5 +1,7 @@
 ﻿using BlogApp.Business.DTOs.BrandDTOs;
 using BlogApp.Business.Services.Interfaces;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,7 +9,8 @@ namespace BlogApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoryController : ControllerBase
+	[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+	public class CategoryController : ControllerBase
     {
         private readonly ICategoryService _service;
         public CategoryController(ICategoryService service)

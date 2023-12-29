@@ -13,10 +13,16 @@ namespace BlogApp.DAL.Context
 {
     public class AppDbContext : IdentityDbContext<AppUser>
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { 
+        public AppDbContext(DbContextOptions options) : base(options) { 
         
         }
 
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<StudentsCourses> StudentsCourses { get; set; }
+        public DbSet<Course> Courses { get; set; }
+	
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
@@ -26,12 +32,5 @@ namespace BlogApp.DAL.Context
                 .HasForeignKey(e => e.ParentId);
             base.OnModelCreating(modelBuilder);
         }
-        public virtual DbSet<Category> Categories { get; set; }
-        public DbSet<Student> Students { get; set; }
-        public DbSet<Teacher> Teachers { get; set; }
-        public DbSet<StudentsCourses> StudentsCourses { get; set; }
-        public DbSet<Course> Courses { get; set; }
-	
-
 	}
 }

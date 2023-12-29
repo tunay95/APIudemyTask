@@ -313,3 +313,9 @@ C:\Users\II novbe\Source\Repos\APIudemyTask\BlogAppAPI\obj\Debug\net6.0\scopedcs
 C:\Users\II novbe\Source\Repos\APIudemyTask\BlogAppAPI\obj\Debug\net6.0\BlogApp.API.csproj.CopyComplete
 C:\Users\II novbe\Source\Repos\APIudemyTask\BlogAppAPI\obj\Debug\net6.0\BlogApp.API.genruntimeconfig.cache
 C:\Users\II novbe\Source\Repos\APIudemyTask\BlogAppAPI\obj\Debug\net6.0\ref\BlogApp.API.dll
+C:\Users\TUNAY\source\repos\APIudemyTask\BlogAppAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\TUNAY\source\repos\APIudemyTask\BlogAppAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\TUNAY\source\repos\APIudemyTask\BlogAppAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\TUNAY\source\repos\APIudemyTask\BlogAppAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\TUNAY\source\repos\APIudemyTask\BlogAppAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\TUNAY\source\repos\APIudemyTask\BlogAppAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

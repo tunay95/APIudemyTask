@@ -1,4 +1,5 @@
 ﻿using BlogApp.Business.DTOs;
+using BlogApp.Business.DTOs.UserDTOs;
 using BlogApp.Business.Services.Implementations;
 using BlogApp.Business.Services.Interfaces;
 using BlogApp.Core.Entities;
@@ -13,15 +14,15 @@ namespace BlogApp.API.Controllers
     [ApiController]
     public class AccountConroller:ControllerBase
     {
-        private readonly IRegisterService _registeredServices;
+        private readonly IAccountService _registeredServices;
 
-        public AccountConroller(IRegisterService registeredServices)
+        public AccountConroller(IAccountService registeredServices)
         {
             _registeredServices = registeredServices;
         }
 
         [AllowAnonymous]
-        [HttpPost]
+        [HttpPost("[action]")]
         public async Task<IActionResult> Register([FromForm]RegisterDTO registerDTO)
         {
 
@@ -29,5 +30,13 @@ namespace BlogApp.API.Controllers
             return StatusCode(StatusCodes.Status200OK);
       
         }
-    }
+		[HttpPost("[action]")]
+		public async Task<IActionResult> Login([FromForm] LoginDTO loginDTO)
+		{
+
+			var result = await _registeredServices.LoginAsync(loginDTO);
+			return Ok(result);
+
+		}
+	}
 }
